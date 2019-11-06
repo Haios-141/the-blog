@@ -1,0 +1,199 @@
+.divider {
+  margin: 0.8rem;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: #334d50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);
+  background: linear-gradient(to right, #cbcaa5, #334d50);
+
+  color: rgb(122, 28, 56);
+}
+
+.jumbotron {
+  margin-top: 10px;
+  background-color: inherit;
+}
+
+.container-cs {
+  width: 100%;
+  padding: 1.1rem;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.underheader-text {
+  margin-top: 1.1rem;
+  font-size: 1.2rem;
+}
+
+.form-box {
+  width: 50%;
+  padding: 2em;
+  margin-bottom: 2em;
+  border-style: outset;
+}
+
+.box {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.img-thumbnail {
+  padding: 0px;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  border-style: outset;
+}
+
+.img-thumbnail:hover {
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.img {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.hover-container:hover .img {
+  opacity: 0.5;
+}
+
+
+/* Underline CSS */
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.box .custom-underline::after {
+  top: 52%;
+  height: 2px !important;
+  width: 40%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.4s ease-out all .1s;
+}
+
+.box:hover .custom-underline::after {
+  width: 90%;
+  left: 5%;
+    transition: 0.5s ease all;
+}
+
+/* my Custom Button */
+
+.myButton {
+	-moz-box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #574c57), color-stop(1, #b0bac4));
+	background:-moz-linear-gradient(top, #574c57 5%, #b0bac4 100%);
+	background:-webkit-linear-gradient(top, #574c57 5%, #b0bac4 100%);
+	background:-o-linear-gradient(top, #574c57 5%, #b0bac4 100%);
+	background:-ms-linear-gradient(top, #574c57 5%, #b0bac4 100%);
+	background:linear-gradient(to bottom, #574c57 5%, #b0bac4 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#574c57', endColorstr='#b0bac4',GradientType=0);
+	background-color:#574c57;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	font-size:20px;
+	padding:11px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b0bac4), color-stop(1, #574c57));
+	background:-moz-linear-gradient(top, #b0bac4 5%, #574c57 100%);
+	background:-webkit-linear-gradient(top, #b0bac4 5%, #574c57 100%);
+	background:-o-linear-gradient(top, #b0bac4 5%, #574c57 100%);
+	background:-ms-linear-gradient(top, #b0bac4 5%, #574c57 100%);
+	background:linear-gradient(to bottom, #b0bac4 5%, #574c57 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b0bac4', endColorstr='#574c57',GradientType=0);
+	background-color:#b0bac4;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/* @media (max-width: 422px) {
+  .box .custom-underline::after {
+    top: 60%;
+    width: 40%;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 0.6);
+      transition: 0.4s ease-out all .1s;
+  }
+} */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .box .custom-underline::after {
+    top: 40%;
+  }
+
+  .box {
+    margin-top: 14px;
+  }
+
+  .custom-underline {
+    font-size: 1.9rem;
+  }
+
+  .underheader-text {
+    font-size: 1rem;
+  }
+
+  .overlay-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .box .custom-underline::after {
+    top: 40%;
+  }
+
+  .custom-underline {
+    font-size: 1.65rem;
+  }
+
+  .underheader-text {
+    font-size: 0.85rem;
+  }
+
+  .overlay-text {
+    font-size: 1.1rem;
+  }
+
+  .form-box {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}

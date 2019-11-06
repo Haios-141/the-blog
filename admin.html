@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+
+    <title>Admin</title>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="./index.html">Home</a>
+          <a class="nav-item nav-link active" href="#">Admin <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link disabled" href="#">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container box w-50">
+        <h1 class="custom-underline">Nature & Science</h1>
+        <p class="underheader-text">A story about the Nature of Science and the Science of Nature</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h1 class="">Create a new Article</h1>
+    </div>
+
+    <div class="container form-box">
+      <form action="/submit_data.php" class="needs-validation" novalidate>
+        <h2>Article Title</h2>
+        <div class="form-group md-form">
+          <input class="form-control" type="text" name="" value="" placeholder="Article Title"
+          required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <h2>Choose an Image</h2>
+        <div class="form-group">
+          <input type="file" name="" value="" >
+        </div>
+
+        <h2>Article Text</h2>
+        <div class="form-group">
+          <textarea name="" id="" cols="" rows="5" class="form-control" required></textarea>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <h2>Article Category</h2>
+        <div class="form-group">
+          <input class="form-control" type="text" name="" value=""  placeholder="Enter Category" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <button type="submit" class="myButton">Submit</button>
+      </form>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/jquery-slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script>
+    // Disable form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+  </body>
+</html>
